@@ -11,7 +11,7 @@ W3C 关注的点非常的多，因此也分为众多的 Working Group（WG），
 
 Google Chrome 团队在 WICG 提的 Portals 和 Web Packaging 也在 WG 的会议上有过一些讨论，并且开发人员也演示了 demo，效果非常好，Portals 让在浏览器上实现多页切换动画有了解决方案，在这之前，页与页之间切换只能通过 SPA 或者将下一个页面嵌入 iframe 来实现，SPA 并不是所有场景都适用，而 iframe 方案，其中的痛处只有开发过的人才知道。
 
-性能相关提案还有很多，我特别感兴趣的有 [Task worklet](https://docs.google.com/presentation/d/12QX9k2yXFngwbEIm4fA4KJ4HQoiiPa12oBJSisx6FRA/edit%22%20%5Cl%20%22slide=id.p) ，让开发者可以更优雅的执行并行任务，比现在的 Worker 要性能更好，使用更方便，不过还处于非常早期的阶段，能否通过还未可知。Web Performance WG 这次提了非常多的帮助测量性能的提案，毕竟这块之前在浏览器是比较欠缺的，这次的提案有 Input Timing / In-flight Resource Requests / JS Self-profiling / Element Timing for \<img\> 等等，还提出了一个方法来测量页面的稳定性，叫 [Layout Stability](https://docs.google.com/presentation/d/1FSpgaQobGOHKCHYdGSn2xK2vpiG-Ynw6Yvjhv4abtIU/edit?ts=5bc609d1#slide=id.p)，通过对比元素前后的位置来计算稳定性，加起来算出整个页面的稳定性，稳定性高的页面一般不会出现首屏闪动。
+性能相关提案还有很多，我特别感兴趣的有 Task worklet，让开发者可以更优雅的执行并行任务，比现在的 Worker 要性能更好，使用更方便，不过还处于非常早期的阶段，能否通过还未可知。Web Performance WG 这次提了非常多的帮助测量性能的提案，毕竟这块之前在浏览器是比较欠缺的，这次的提案有 Input Timing / In-flight Resource Requests / JS Self-profiling / Element Timing for \<img\> 等等，还提出了一个方法来测量页面的稳定性，叫 Layout Stability，通过对比元素前后的位置来计算稳定性，加起来算出整个页面的稳定性，稳定性高的页面一般不会出现首屏闪动。
 
 Web Platform 和 Web Performance 工作组都是先解决现有 ISSUE，后过新的提案。如果仔细观察，会发现这些 ISSUE 的建立时间很多是 2015/2016 年的，时间跨度很大，如果不是早期就在跟进这些 ISSUE，很难跟上讨论的步伐。为什么这些 ISSUE 时间跨度会这么大，可能很多人会认为 W3C 很慢，我觉得这是事实，有很多原因，这些原因只代表了我个人的看法，其一，除了 W3C 组织本身的员工之外，其他都不是全职的，任职于全球各个不同的公司，只能靠 GitHub 或者 WG 自行组织的 F2F 讨论，沟通周期很长，时差也是一个因素；其二，W3C 非常注重安全和隐私，每个提案都必须过这一关，否则是绝对不可能通过的；其三，会有一些大公司之间关于标准的竞争问题；其四，浏览器非常复杂，一个看似很小的改动都很有可能牵扯到其他的 WG。实际上原因可能不止这些。
 
