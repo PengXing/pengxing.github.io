@@ -25,3 +25,5 @@ Web Platform 和 Web Performance 工作组都是先解决现有 ISSUE，后过�
 
 非常感谢 W3C 中国 Team 可爱的人，你们的努力让更多的国内企业能参与到 Web 的建设中来。
 
+附一张会场门口的美景
+![TPAC 会场门口的美景](https://boscdn.baidu.com/v1/assets/tpac_2018.jpeg)
